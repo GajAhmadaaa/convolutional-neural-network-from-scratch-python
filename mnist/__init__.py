@@ -5,7 +5,7 @@ import gzip
 import struct
 import array
 import numpy as np
-from urllib import urlretrieve
+from urllib.request import urlretrieve
 import sys
 
 #from: https://github.com/datapythonista/mnist
