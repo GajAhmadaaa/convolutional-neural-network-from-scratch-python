@@ -59,6 +59,6 @@ def preprocess(img):
 
     img = gray.reshape(1,28,28).astype(np.float32)
 
-    img-= int(33.3952)
-    img/= int(78.6662)
+    img -= int(33.3952)
+    img //= int(78.6662)
     return img
