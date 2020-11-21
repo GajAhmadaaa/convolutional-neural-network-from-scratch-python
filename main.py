@@ -11,9 +11,9 @@ test_labels = mnist.test_labels()
 
 print('Preparing data......')
 train_images -= int(np.mean(train_images))
-train_images /= int(np.std(train_images))
+train_images //= int(np.std(train_images))
 test_images -= int(np.mean(test_images))
-test_images /= int(np.std(test_images))
+test_images //= int(np.std(test_images))
 training_data = train_images.reshape(60000, 1, 28, 28)
 training_labels = np.eye(num_classes)[train_labels]
 testing_data = test_images.reshape(10000, 1, 28, 28)
