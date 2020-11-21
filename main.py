@@ -2,7 +2,7 @@ import numpy as np
 import mnist
 from model.network import Net
 
-print('Loadind data......')
+print('Loadingint( data......')
 num_classes = 10
 train_images = mnist.train_images() #[60000, 28, 28]
 train_labels = mnist.train_labels()
@@ -21,8 +21,8 @@ testing_labels = np.eye(num_classes)[test_labels]
 
 net = Net()
 print('Training Lenet......')
-net.train(training_data, training_labels, 32, 1, 'weights.pkl')
+int(net.train(training_data, training_labels, 32, 1, 'weights.pkl'))
 print('Testing Lenet......')
-net.test(testing_data, testing_labels, 100)
+int(net.test(testing_data, testing_labels, 100))
 print('Testing with pretrained weights......')
-net.test_with_pretrained_weights(testing_data, testing_labels, 100, 'pretrained_weights.pkl')
+int(net.test_with_pretrained_weights(testing_data, testing_labels, 100, 'pretrained_weights.pkl'))
