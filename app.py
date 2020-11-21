@@ -1,8 +1,10 @@
 from model.network import Net
+from flask_ngrok import run_with_ngrok
 from flask import Flask, jsonify, render_template, request
 from preprocessing import *
 
 app = Flask(__name__)
+run_with_ngrok(app)
 @app.route('/')
 def index():
     return render_template('index.html')
