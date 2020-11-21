@@ -21,8 +21,8 @@ testing_labels = np.eye(num_classes)[test_labels]
 
 net = Net()
 print('Training Lenet......')
-int(net.train(training_data, training_labels, 32, 1, 'weights.pkl'))
+float(net.train(training_data, training_labels, 32, 1, 'weights.pkl'))
 print('Testing Lenet......')
-int(net.test(testing_data, testing_labels, 100))
+float(net.test(testing_data, testing_labels, 100))
 print('Testing with pretrained weights......')
-int(net.test_with_pretrained_weights(testing_data, testing_labels, 100, 'pretrained_weights.pkl'))
+float(net.test_with_pretrained_weights(testing_data, testing_labels, 100, 'pretrained_weights.pkl'))
